@@ -1,0 +1,95 @@
+body {
+    padding: 10% 0;
+    background-color: #26C6DA;
+    color: #000;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+.wordcount {
+    color: #a52a2a;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+.space-under {
+    margin-bottom: 10px;
+}
+
+.extra-space-under {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    word-wrap: break-word;
+}
+
+.list-group-item:first-child {
+    border-radius: 0px;
+}
+
+.list-group-item:first-child::after {
+    border-bottom: 10px solid white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    left: 10px;
+}
+
+.list-group-item:last-child {
+    border-radius: 0px;
+}
+
+#results{
+    display:none;
+}
+
+/* begin loading icon*/
+#loader{
+    display:none;
+}
+.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+
+/* end loading icon*/
+
+/*start css for shadow*/
+.shadow {
+    padding: 0px;
+}
+
+.list-group {
+    margin: 0px;
+}
+
+.input-group-addon {
+    border-radius: 0px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control-feedback{
+    z-index:99;
+}
+/*end css for shadow*/

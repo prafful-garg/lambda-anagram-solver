@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta content="A fast online anagram solver that solves English and Dutch anagrams. Built entirely on AWS services, fully serverless!" name="description" />
+    <meta content="Anagram, solver, anagram solver, solving, dutch, english, dictionary, fast, easy, serverless" name="keywords" />
+
+    <title>Anagram Solver</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center">Anagram Solver</h1>
+    <div class="row text-center space-under">
+        <div class="col-md-6 col-md-offset-3">
+            <label class="col-xs-6 text-center">
+                <input name="language" type="radio" value="en" checked> English
+                <br/>
+                <div class="wordcount">610k words</div>
+            </label>
+            <label class="col-xs-6 text-center">
+                <input name="language" type="radio" value="nl"> Dutch
+                <br/>
+                <div class="wordcount">320k words</div>
+            </label>
+        </div>
+    </div>
+
+
+    <div class="row extra-space-under">
+        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 shadow">
+            <div class="input-group">
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-search"></span>
+					</span>
+                <input type="text" class="form-control frm-search-input" id='input-anagram' placeholder="Type anagram, hit enter"
+                       autofocus>
+                <span id="loader" class="glyphicon glyphicon-refresh glyphicon-refresh-animate form-control-feedback"
+                      aria-hidden="true"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <h4 class="results-title text-center" id="result-title"></h4>
+    <div class="row results" id="results">
+        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 shadow">
+            <ul class="list-group">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/script-jquery.js"></script>
+
+
+</body>
+</html>
